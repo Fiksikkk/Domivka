@@ -1,0 +1,507 @@
+/*ALL*/
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+    text-decoration-color: #42474b;
+}
+
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    margin: 0 5%;
+    background-color: #f1f0ec;
+}
+
+/*HEADER*/
+
+.header {
+    height: 5em;
+    width: 90%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 0.6fr 0.6fr 0.7fr 1fr 1fr;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #f1f0ec;
+    border-bottom: 2px outset lightgrey;
+    padding-right: 0.5em;
+}
+
+.header a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: #42474b;
+    font-size: 1.5em;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.header a:hover {
+    background-color: #42474b;
+    color: #f1f0ec;
+    transition: none;
+}
+
+
+
+.header span img {
+    padding: 0.5em;
+    max-height: 5em;
+    font-size: 1em;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+
+/*MAIN*/
+main {
+    padding-top: 5em;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.container {
+    height: max-content;
+    text-align: center;
+    background-color: #bac1b9;
+    padding-bottom: 8em;
+    padding-top: 2em;
+}
+
+.request {
+    padding-bottom: 0;
+}
+
+/*ABOUT*/
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-left {
+    display: grid;
+    grid-auto-rows: 2fr 1fr;
+    justify-items: center;
+}
+
+.about-right {
+    padding-top: 8em;
+}
+
+.about-bottom {
+    height: 15em;
+}
+
+/*КНОПКА BTNREQUEST*/
+
+
+
+.btnrequest {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border-radius: 3em;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    align-self: center;
+    font-size: 1.2em;
+    font-weight: 800;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.third {
+    color: black;
+    box-shadow: 0 0 40px 40px #9ea39c inset, 0 0 0 0 #9ea39c;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.third:hover {
+    box-shadow: 0 0 10px 0 #81847d inset, 0 0 10px 4px #81847d;
+}
+
+.about-right-btn {
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+.btnrequest p {
+    text-decoration-color: black;
+}
+
+/*/КНОПКА BTNREQUEST*/
+
+
+.logo {
+    padding-top: 2em;
+}
+
+/*SERVICES*/
+.paragraphs {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-bottom: 5em; */
+    padding: 0 2em;
+}
+
+.paragraph-services {
+    /* width: 100vw;   */
+    display: flex;
+    justify-content: center;
+    margin: 2em 1em 5em 1em;
+
+    flex-wrap: wrap;
+    gap: 1em;
+    /* align-items: center; */
+    /* flex-direction: column; */
+}
+
+.paragraph {
+    max-width: 35em;
+    margin: 2em 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.paragraph-icon {
+    border: 5px solid #cfd2cb;
+    border-radius: 50%;
+    background-color: #e1e2dc;
+}
+
+.paragraph-icon img {
+    max-width: none;
+    padding: 1.5em;
+    color: wheat;
+}
+
+.paragraph-text {
+    width: 80%;
+    text-align: left;
+    margin-left: 1em;
+    font-size: x-large;
+
+}
+
+.services {
+    display: flex;
+    gap: 2em;
+    margin: 3em 3em;
+}
+
+.service-item {
+    width: fit-content;
+    padding: 1em;
+    margin: 1em;
+    border: 2px solid black;
+}
+
+.service-item p,
+.service-item li {
+    font-size: large;
+}
+
+.service-list {
+    padding-left: 1em;
+}
+
+.service-item li {
+    list-style-type: disc;
+    text-align: left;
+}
+
+/*/SERVICES*/
+
+/*PROECTS*/
+
+.proects {
+    display: grid;
+    grid-template-areas:
+        "A A"
+        "B C"
+        "E D";
+}
+
+.proects-header {
+    grid-area: A;
+    margin-bottom: 2em;
+}
+
+.des1{
+    grid-area: B;
+}
+
+.wrap1 {
+    grid-area: C;
+}
+
+.des2{
+    grid-area: D;
+}
+
+.wrap2 {
+    grid-area: E;
+}
+
+.description {
+    padding-top: 8em;
+}
+
+/*/PROECTS*/
+
+/*STAGES*/
+.stages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+}
+
+.stages div:first-child {
+    margin-bottom: 1em;
+}
+
+.stage {
+    width: 42em;
+    margin: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.5em;
+}
+
+.stage h1 {
+    text-align: top;
+    font-size: 5em;
+}
+
+.stage h3 {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+/*/STAGES*/
+
+/*REQUEST*/
+.request div:first-child {
+    padding-top: 1em;
+}
+
+
+.request-form {
+    margin: 3em 30% 0 30%;
+    width: 40%;
+    justify-content: center;
+    padding: 3em 2em 2em 2em;
+    border: 2px solid black;
+
+}
+
+.request-form input[type=text],
+.request-form input[type=tel],
+.request-form input[type=number] {
+    width: 100%;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 1em;
+    box-sizing: border-box;
+    margin: 1em 0;
+    resize: vertical;
+    background-color: #f1f0ec;
+}
+
+.request-form button[type=submit] {
+    border: 3px solid #81847d;
+    background-color: #bac1b9;
+    margin-top: 3em;
+    padding: 1em 2em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.request-form button[type=submit]:hover {
+    background-color: #9ea39c;
+}
+
+.request-form button[type=submit] span {
+    font-weight: bold;
+}
+
+.request-form span {
+    font-size: larger;
+}
+
+.media {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.5em;
+    padding-top: 4em;
+    padding-bottom: 1em;
+    gap: 2em;
+}
+
+.media a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.fa-instagram:hover {
+    color: #E1306C;
+}
+
+.fa-telegram:hover {
+    color: #2AABEE;
+}
+
+.fa-whatsapp:hover {
+    color: #25D366;
+}
+
+.fa-phone:hover {
+    color: #128C7E;
+}
+
+.fa-envelope:hover {
+    color: #EA4335;
+}
+
+.media a i {
+    font-size: 3em;
+}
+
+.media a:first-child i {
+    font-size: 2.4em;
+}
+
+.up {
+    display: grid;
+    width: 4em;
+    height: 4em;
+    background-color: lightgrey;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
+    z-index: 1000;
+    text-decoration: none;
+    border: 5px solid #42474b;
+}
+
+.up img {
+    height: 60%;
+    align-self: center;
+    justify-self: center;
+    color: #42474b;
+}
+
+
+
+.footer {
+    padding: 2em 0 0.5em 0;
+}
