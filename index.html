@@ -26,7 +26,7 @@
             <a href="#about">
                 <p class="appearance">Головна</p>
             </a>
-            <a href="#services">
+            <a href="#services" class="hidden">
                 <p class="appearance">Послуги</p>
             </a>
             <a href="#proects">
@@ -51,7 +51,7 @@
             <ul class="menu__box">
                 <li><a class="menu__item" href="#about">Головна</a></li>
                 <li><a class="menu__item" href="#services">Послуги</a></li>
-                <li><a class="menu__item" href="#proects">Проекти</a></li>
+                <li class="hidden"><a class="menu__item" href="#proects">Проекти</a></li>
                 <li><a class="menu__item" href="#stages">Етапи роботи</a></li>
                 <li><a class="menu__item" href="#request">Залишити заявку</a></li>
             </ul>
@@ -62,48 +62,46 @@
     <!--MAIN-->
     <main>
         <a href="#about" class="up">
-            <img src="src/Images/up.png">
+            <!-- <img src="src/Images/up.png"> -->
+            <i class="fa-solid fa-angle-up"></i>
         </a>
         <div class="container about" id="about">
             <div class="about-left">
                 <div class="logo appearance">
                     <img src="src/Images/logo.png" />
                 </div>
-                <div class="">
-                    <h1 class="top">Название</h1>
-                    <h2 class="left">Делаем ремонт под ключ</h2>
+                <div class="about-name">
+                    <h1 class="top about-name-first">DOMIVKA RENOVATION<br></h1>
+                    <h2 class="left">Ремонт квартир, офісів, ресторанів та комерційнх приміщень</h2>
+                    <div class="partition"> </div>
                 </div>
+
             </div>
             <div class="about-right">
                 <div>
                     <h2 class="right" id="aboutRight1">
-                        ВІД ДИЗАЙН ПРОЕКТУ
+                        ВІД ПРОЕКТУ ДО ПОВНОЇ РЕАЛІЗАЦІЇ <br>
+                        ЗА КОРОТКИЙ ТЕРМІН
                         <br>
-                        ДО ПОВНОЇ РЕАЛІЗАЦІЇ
                         <br>
-                        ЗА 60 ДНІВ
                         <br>
-
                     </h2>
                     <h2 class="left" id="aboutRight2">
-                        - ФІКСОВАНА ВАРТІСТЬ ВІД $350/м2
-                        - ІНДИВІДУАЛЬНИЙ ДИЗАЙН
-                        <br>
                         - ГАРАНТОВАНА ЯКІСТЬ
+                        <br>
+                        - ФІКСОВАНА ВАРТІСТЬ ВІД 4000₴/М²
                     </h2>
                     <div class="about-right-btn bottom" id="aboutRight3">
                         <a href="#request" class="btnrequest third">
                             <p> Залишити заявку </p>
                         </a>
                     </div>
+                    <div class="partition"> </div>
                 </div>
-            </div>
-            <div class="about-bottom left">
-                blablabla
             </div>
         </div>
         <div class="container" id="services">
-            <h1 class="top">Послуги</h1>
+            <h1 class="appearance">РЕМОНТ ВІД DOMIVKA RENOVATION ЦЕ:</h1>
             <div class="paragraph-services">
                 <div class="paragraph left">
                     <div class="paragraph-icon">
@@ -111,7 +109,7 @@
                     </div>
                     <div class="paragraph-text">
                         <p><b>Повне дотримання кошторису -
-                             </b>вартість ремонту не зміниться</p>
+                            </b>вартість ремонту не зміниться</p>
                     </div>
                 </div>
                 <div class="paragraph right">
@@ -119,7 +117,7 @@
                         <img src="./src/icons/png/002.png">
                     </div>
                     <div class="paragraph-text">
-                        <p><b>Якість - </b>дотримання всіх технологій 
+                        <p><b>Якість - </b>дотримання всіх технологій
                             та будівельних нормативів</p>
                     </div>
                 </div>
@@ -128,7 +126,7 @@
                         <img src="./src/icons/png/003.png">
                     </div>
                     <div class="paragraph-text">
-                        <p><b>Акуратність - </b>чистота та порядок 
+                        <p><b>Акуратність - </b>чистота та порядок
                             на об'єкті, дбайливе ставлення до матеріалів</p>
                     </div>
                 </div>
@@ -146,8 +144,8 @@
                         <img src="./src/icons/png/005.png">
                     </div>
                     <div class="paragraph-text">
-                        <p><b>Дотримання встановлених термінів - 
-                        </b>виконання робіт</p>
+                        <p><b>Дотримання встановлених термінів -
+                            </b>виконання робіт</p>
                     </div>
                 </div>
                 <div class="paragraph right">
@@ -166,7 +164,7 @@
                     </div>
                     <div class="paragraph-text">
                         <p><b>Професіоналізм - </b>усіма роботами
-                             займаються фахівці своєї справи</p>
+                            займаються фахівці своєї справи</p>
                     </div>
                 </div>
                 <div class="paragraph right">
@@ -212,7 +210,7 @@
                         <b>
                             <br>
                             <br>
-                            ВАРТІСТЬ: ВІД $25/м2
+                            ВАРТІСТЬ: ВІД 4000₴/М²
                         </b>
                     </p>
                 </div>
@@ -243,7 +241,7 @@
                     <p class="bottom">
                         <b>
                             <br>
-                            ВАРТІСТЬ: ВІД $25/м2
+                            Входить у вартість ремонту 
                         </b>
                     </p>
                 </div>
@@ -325,37 +323,38 @@
                 </div>
                 <div class="stage right">
                     <h1>02</h1>
-                    <h3>Зв’язуємось з вами найближчим часом 
+                    <h3>Зв’язуємось з вами найближчим часом
                         та уточнюємо всі необходні данні, домовляємось
-                         про зручний час та дату замірів</h3>
+                        про зручний час та дату замірів</h3>
                 </div>
                 <div class="stage left">
                     <h1>03</h1>
-                    <h3>По результатах замірів, формуємо попередній 
-                        кошторис та приступаємо до розробки дизайн 
+                    <h3>По результатах замірів, формуємо попередній
+                        кошторис та приступаємо до розробки дизайн
                         проекту​</h3>
                 </div>
                 <div class="stage right">
                     <h1>04</h1>
                     <h3>По готовноті документа, узгоджуємо все
-                         необхідне, формуємо фінальний кошторис
-                          та підписуємо договір​ на ремонт</h3>
+                        необхідне, формуємо фінальний кошторис
+                        та підписуємо договір​ на ремонт</h3>
                 </div>
                 <div class="stage left">
                     <h1>05</h1>
                     <h3>Проводимо закупівлі згідно кошторису та
-                         приступаємо до ремонту​</h3>
+                        приступаємо до ремонту​</h3>
                 </div>
                 <div class="stage right">
                     <h1>06</h1>
-                    <h3>Протягом 60 діб ваша нова оселя 
-                        повністю готова до заселення​</h3>
+                    <h3>Протягом зазначеного  строку 
+                        здаємо ваше замовлення ​</h3>
                 </div>
             </div>
         </div>
         <div class="container request" id="request">
-            <div>
-                <h1 class="top">Залиште заявку</h1>
+            <div class="request-top">
+                <h1 class="top">ЗАЛИШТЕ ЗАЯВКУ<br></h1>
+                <h3 class="left"> Залиште заявку на безкоштовний виїзд фахівця до вашого об'єкта </h3>
             </div>
             <div class="request-form bottom">
                 <form action="https://formspree.io/f/mrgjnowa" method="POST">
@@ -368,16 +367,19 @@
                     <label for="rooms"><span>Кількість кімнат</span></label>
                     <input type="number" id="rooms" name="rooms" placeholder="Кількість кімнат">
 
-                    <button type="submit"><span>Send</span></button>
+                    <button type="submit"><span>Залишити заявку</span></button>
                 </form>
             </div>
 
             <div class="connect bottom">
+                <div class="connect-text">
+                    <h1 class="right">Потрібна консультація?</h1>
+                </div>
                 <div class="media">
-                    <a href="tel:+380953770241">
+                    <a href="tel:+380960287730">
                         <i class="fa-solid fa-phone"></i>
                     </a>
-                    <a target="_blank" href="https://instagram.com/andrey_beluy?igshid=YmMyMTA2M2Y=">
+                    <a target="_blank" href="https://instagram.com/domivka.renovation?igshid=YmMyMTA2M2Y=">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                     <a target="_blank" href="https://t.me/Pelmenevich">
@@ -391,7 +393,8 @@
                     </a>
                 </div>
 
-                <h3>м. Київ</h3>
+                <h3><br>+380 (96) 028 77 30<br>
+                    м. Київ</h3>
                 <br>
             </div>
             <div class="footer">

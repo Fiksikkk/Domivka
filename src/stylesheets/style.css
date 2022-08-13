@@ -73,6 +73,10 @@ select {
     font: inherit;
 }
 
+.partition {
+    display: none;
+}
+
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
     * {
@@ -106,7 +110,6 @@ body {
     z-index: 100;
     background-color: #f1f0ec;
     border-bottom: 2px outset lightgrey;
-    padding-right: 0.5em;
 }
 
 .header a {
@@ -153,7 +156,7 @@ main {
     height: max-content;
     text-align: center;
     background-color: #bac1b9;
-    padding-bottom: 8em;
+    padding-bottom: 5em;
     padding-top: 2em;
 }
 
@@ -171,8 +174,18 @@ main {
     display: grid;
     grid-auto-rows: 2fr 1fr;
     justify-items: center;
+    line-height: 1;
+    border-right: solid 2px black ;
 }
+.about-name {
+    width: 80%;
+}
+.about-name h2 {
+    padding-top: 1em;
+    font-size: larger;
+    line-height: 1.5;
 
+}
 .about-right {
     padding-top: 8em;
 }
@@ -180,6 +193,7 @@ main {
 .about-bottom {
     height: 15em;
 }
+
 
 /*КНОПКА BTNREQUEST*/
 
@@ -234,27 +248,23 @@ main {
 
 
 .logo {
-    padding-top: 2em;
+    padding-top: 1em;
+
 }
 
 /*SERVICES*/
 .paragraphs {
     display: flex;
     flex-wrap: wrap;
-    /* margin-bottom: 5em; */
     padding: 0 2em;
 }
 
 .paragraph-services {
-    /* width: 100vw;   */
     display: flex;
     justify-content: center;
     margin: 2em 1em 5em 1em;
-
     flex-wrap: wrap;
     gap: 1em;
-    /* align-items: center; */
-    /* flex-direction: column; */
 }
 
 .paragraph {
@@ -262,7 +272,6 @@ main {
     margin: 2em 0;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .paragraph-icon {
@@ -296,6 +305,7 @@ main {
     padding: 1em;
     margin: 1em;
     border: 2px solid black;
+    border-radius: 15px;
 }
 
 .service-item p,
@@ -387,17 +397,18 @@ main {
 /*/STAGES*/
 
 /*REQUEST*/
-.request div:first-child {
-    padding-top: 1em;
+
+.request-top h3 {
+    margin: 0 1em;
 }
 
-
 .request-form {
-    margin: 3em 30% 0 30%;
+    margin: 3em 30% 5em 30%;
     width: 40%;
     justify-content: center;
     padding: 3em 2em 2em 2em;
     border: 2px solid black;
+    border-radius: 15px;
 
 }
 
@@ -434,14 +445,16 @@ main {
 .request-form span {
     font-size: larger;
 }
+.connect-text {
+    padding-top: 1em;
+}
 
 .media {
 
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4.5em;
-    padding-top: 4em;
+    padding-top: 2em;
     padding-bottom: 1em;
     gap: 2em;
 }
@@ -493,8 +506,9 @@ main {
     border: 5px solid #42474b;
 }
 
-.up img {
-    height: 60%;
+
+.up i {
+    font-size: 2.2em;
     align-self: center;
     justify-self: center;
     color: #42474b;
@@ -505,3 +519,5 @@ main {
 .footer {
     padding: 2em 0 0.5em 0;
 }
+
+

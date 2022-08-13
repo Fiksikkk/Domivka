@@ -6,7 +6,7 @@
     .header {
         width: 100%;
     }
-
+    
     .request-form {
         margin: 3em 25% 5em 25%;
         width: 50%;
@@ -47,7 +47,31 @@
     .about {
         display: block;
     }
-
+    .about-name-first {
+        display: none;
+    }
+    .about-name h2 {
+        font-size: larger;
+    }
+    .about-left {
+        border-right: none;
+        /* border-bottom: 2px solid black; */
+    
+    }
+    .about-right {
+        padding-top: 5em;
+    }
+    .about-right .partition {
+        margin-left: 10%;
+        width: 80%;
+    }
+    .partition {
+        /* width: 80%; */
+        margin-top: 5em;
+        height: 1px;
+        display: block;
+        border-top: 2px solid black;
+    }
     .services {
         margin: 0;
         display: block;
@@ -101,8 +125,11 @@
 
     .request-form {
         padding: 10% 10%;
-        margin: 1em;
+        margin: 1em 1em 5em 1em;
         width: auto;
+    }
+    .request-form span {
+        font-size: large;
     }
 
     .media {
