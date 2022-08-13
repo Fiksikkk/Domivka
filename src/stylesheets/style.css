@@ -413,8 +413,7 @@ main {
 }
 
 .request-form input[type=text],
-.request-form input[type=tel],
-.request-form input[type=number] {
+.request-form input[type=tel] {
     width: 100%;
     padding: 1em;
     border: 2px solid black;
@@ -424,21 +423,23 @@ main {
     resize: vertical;
     background-color: #f1f0ec;
 }
-
-.request-form button[type=submit] {
+#request-form__error-message {
+        margin-top: 3em;
+}
+.request-form button[type=button] {
     border: 3px solid #81847d;
     background-color: #bac1b9;
-    margin-top: 3em;
+    margin-top: 1em;
     padding: 1em 2em;
     border-radius: 1em;
     cursor: pointer;
 }
 
-.request-form button[type=submit]:hover {
+.request-form button[type=button]:hover {
     background-color: #9ea39c;
 }
 
-.request-form button[type=submit] span {
+.request-form button[type=button] span {
     font-weight: bold;
 }
 

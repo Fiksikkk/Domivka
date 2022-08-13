@@ -54,9 +54,7 @@
         font-size: larger;
     }
     .about-left {
-        border-right: none;
-        /* border-bottom: 2px solid black; */
-    
+        border-right: none;    
     }
     .about-right {
         padding-top: 5em;
@@ -66,7 +64,6 @@
         width: 80%;
     }
     .partition {
-        /* width: 80%; */
         margin-top: 5em;
         height: 1px;
         display: block;

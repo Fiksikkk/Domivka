@@ -1,10 +1,12 @@
 $('form').submit(function () {
     var fname = $.trim($('#name').val());
     var fphonenumber = $.trim($('#phonenumber').val());
-    var frooms = $.trim($('#rooms').val());
 
     if (fname === '') {
-        alert('Name is empty.');
+        document.getElementById('nameLabel').innerHTML="Введіть Ваше Ім'я"
+        document.getElementById('nameLabel').style.backgroundColor=red;
+
+        // alert('Name is empty.');
         // document.getElementById('name').style.backgroundColor = #ffdddd;
         return false;
     }
@@ -12,8 +14,5 @@ $('form').submit(function () {
         alert('Phonenumber is empty.');
         return false;
     }
-    else if (frooms === '') {
-        alert('Rooms is empty.');
-        return false;
-    }
+    
 });
