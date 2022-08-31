@@ -132,7 +132,9 @@
     .media {
         gap: 1em;
     }
-
+    .menu_logo {
+        position: absolute;
+    }
 
     #menu__toggle {
         opacity: 0;
